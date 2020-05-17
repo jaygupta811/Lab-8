@@ -1,0 +1,22 @@
+@author: jaygu
+"""
+
+#This is a text based choose your own adventure game
+
+print ('Press 1 to begin the game')
+begin = input('> ')
+#This means that any input will be accepted. However, the game will print an error message if they enter something except for 1.
+
+if begin == "1":
+    print ('Good choice, let us get started')
+    
+elif begin != "1":
+    print ('What a boring person!')
+ #This adresses the possibilty that the user does not press 1
+
+"continue" = input('> ')
+
+print ('Press 1 to continue')
+
+if "continue" == "1":
+    print ('You are an adventerous traveller. Sometimes, you do things you should not. Today is one of those days. Press 1 to continue...')
