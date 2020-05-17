@@ -1,0 +1,66 @@
+# -*- coding: utf-8 -*-
+"""
+
+
+@author: jaygu
+"""
+
+#This is a text based choose your own adventure game
+
+print ('Press 1 to begin the game')
+begin = input('> ')
+#This means that any input will be accepted. However, the game will print an error message if they enter something except for 1.
+
+if begin == "1":
+    print ('Good choice, let us get started')
+    
+elif begin != "1":
+    print ('What a boring person!')
+ #This adresses the possibilty that the user does not press 1
+
+"continue" = input('> ')
+
+print ('Press 1 to continue')
+
+if "continue" == "1":
+    print ('You are an adventerous traveller. Sometimes, you do things you should not. Today is one of those days. Press 1 to continue...')
+
+"continue2" = input('> ')
+
+if "continue2" == "1":
+    print ('Today, you are stranded in a haunted cave. You think to yourself - why did I decide to enter this cave? Whatever - what was done was done. Now you had to get out. There are 2 potential exit points - which one do you choose - point 1 or point 2?')
+
+door1 = input('> ')
+
+if door1 == "1":
+    print ('You rapidly open the door to another cave. Do you proceed or do you return to the original cave? Press 1 to proceed and 2 to return.')
+    door2 = input('> ')
+    if door2 == "1":
+        print('You enter another, similar cave.  Instead, this time... Press 1 to continue')
+        continue1 = input('> ')
+        if continue1 == "1":
+            print('In this cave, there are other humans. There is a group of three travellers who were also stranded - you guys sit down and disucss what to do going forward. Press 1 to continue.')
+            continue2 = input('> ')
+            if continue2 == "1":
+                print('After talking with each other, you guys decide.')
+    if door2 == "2":
+        print('You return to the cave you came from. The door closes behind you. You attempt to open it again, but it has locked. The door you did not select, however, is still open. Press 1 to continue')
+        continuedoor2 = input('> ')
+        if continuedoor2 == "1":
+            print('Which do you do? Press 1 to select the door that you did not go through, press 2 to remain in the cave')
+            door2repeat = input('> ')
+            if door2repeat == "1":
+                print('You rapidly open the door to a cliff. Since you opened the door so fast you cannot return to the original cave, fall off of the cliff, and die. Game over.')
+            if door2repeat == "2":
+                print('You decide to stay in the cave - both doors are now locked. Press 1 to continue the game')
+            continuedoor2repeat = input('> ')
+            if continuedoor2repeat == "1":
+                print('You have been in the cave for two weeks. No new doors have opened up. No one has shown up. You are on the brink of starvation with nothing you can do about it. Bad choices, huh? Game over.')
+    
+
+
+
+
+if door1 == "2":
+    print('You rapidly open the door to a cliff. Since you opened the door so fast you cannot return to the original cave, fall off of the cliff, and die. Game over.')
+    
